@@ -1,19 +1,19 @@
-interface User {
+type Employee = {
     name: string;
-    age: number;
-    address?: {
-        city: string;
-        street: string;
-    }
+    startDate: Date;
 }
 
-const user: User = {
-    name: 'John',
-    age: 30
+type Manager = {
+    name: string;
+    department: string;
 }
 
-function isLegal(user: User): boolean {
-    return user.age >= 18;
+type TeamLead = Employee & Manager;
+
+const engLead: TeamLead = {
+    name: 'Alice',
+    startDate: new Date(),
+    department: 'Engineering'
 }
 
-isLegal(user);
+console.log(typeof engLead); // object
