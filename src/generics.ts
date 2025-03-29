@@ -6,7 +6,7 @@ let num = identity(42);        // Type: number
 let str = identity("TS");      // Type: string
 let arr = identity([1, 2, 3]); // Type: number[]
 
-// 🔹 Works with custom types too
+//Works with custom types too
 type User = { id: number; name: string };
 let user = identity<User>({ id: 1, name: "Alice" });
 
