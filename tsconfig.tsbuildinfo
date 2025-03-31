@@ -1,1 +1,1 @@
-{"root":["./src/enums.ts","./src/generics.ts","./src/index.ts","./src/typescriptadvanced.ts"],"version":"5.8.2"}
+{"root":["./src/enums.ts","./src/generics.ts","./src/index.ts","./src/typescript-advanced/partial.ts","./src/typescript-advanced/pick.ts"],"version":"5.8.2"}
